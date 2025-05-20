@@ -23,15 +23,16 @@ Im GitHub-Repository haben wir erste Dateien und die Ordnerstruktur vorbereitet.
 
 ### 15. April 2025
 Heute haben wir mit dem Frontend begonnen.  
-Wir haben ein neues React-Projekt erstellt und erste Komponentenstrukturen definiert. Der Seitenaufbau wurde geplant, einfache Layouts wurden entworfen (z. B. Navigationsleiste, Kursdaten-Platzhalter).  
-Zudem haben wir über die künftige Anbindung an das Backend gesprochen und die nächsten Entwicklungsschritte verteilt.
+Wir haben ein neues React-Projekt erstellt und erste Komponentenstrukturen definiert. Der Seitenaufbau wurde geplant, einfache Layouts wurden entworfen (z. B. Navigationsleiste, Kursdaten-Platzhalter).
 
 ---
 
 ### 22. April 2025
+Heute haben wir das Backend getestet und stellte sich heraus das es eine kostenpflichtige API ist also suchten wir einen neuen. Wir stossten dann auf Yahoos API
 
 
 ---
 
 ### 20. Mai 2025
+Heute haben wir die API von Yahoo noch weiter getestet und wurden leider gesperrt da wir zu viele Aufrufe in einer kurzen Zeit tätigten. Die Sperre wurde jedoch nach einer Zeit aufgehoben und jetzt funktioniert die API
 
