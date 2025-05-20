@@ -25,3 +25,13 @@ Im GitHub-Repository haben wir erste Dateien und die Ordnerstruktur vorbereitet.
 Heute haben wir mit dem Frontend begonnen.  
 Wir haben ein neues React-Projekt erstellt und erste Komponentenstrukturen definiert. Der Seitenaufbau wurde geplant, einfache Layouts wurden entworfen (z. B. Navigationsleiste, Kursdaten-Platzhalter).  
 Zudem haben wir über die künftige Anbindung an das Backend gesprochen und die nächsten Entwicklungsschritte verteilt.
+
+---
+
+### 22. April 2025
+
+
+---
+
+### 20. Mai 2025
+
