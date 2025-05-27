@@ -4,6 +4,8 @@ import org.example.boersendashboard.model.StockResponse;
 import org.example.boersendashboard.service.TwelveDataService;
 import org.springframework.web.bind.annotation.*;
 
+
+@CrossOrigin(origins = "http://localhost:3000")
 @RestController
 @RequestMapping("/api/stocks")
 public class StockController {
