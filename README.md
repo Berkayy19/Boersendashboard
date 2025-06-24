@@ -4,7 +4,7 @@ Dieses Projekt ist ein Börsen-Dashboard, das es dem Nutzer ermöglicht, Informa
 
 ## Projektbeschreibung
 
-Das Börsen-Dashboard zeigt Informationen zu Aktien in einer übersichtlichen Weise und ermöglicht es Nutzern, Daten wie den Preis, das Symbol und den Namen der Aktien zu visualisieren. Die App bietet auch eine API, die die Aktienkurse abruft und anzeigt.
+Das Börsen-Dashboard zeigt Informationen zu Aktien in einer übersichtlichen Weise und ermöglicht es Nutzern, Daten wie den Preis, das Symbol und den Namen der Aktien zu visualisieren. Die App bietet auch eine API, die die Aktienkurse abruft und anzeigt. Wir haben uns für TwelveData für die Daten entschieden da es nicht kostenpflichtig ist.
 
 ## Technologien
 
@@ -25,7 +25,7 @@ Das Dropdown-Menü bietet eine Auswahl der wichtigsten Aktien. Alternativ kann e
 ![Dropdown](dropdown.png)
 
 ### 3. API Ansicht
-Diese Ansicht zeigt die API-Daten in der Anwendung und die verschiedenen verfügbaren Optionen.
+Diese Ansicht zeigt die Twelve Data wieviel mal wir die API benutzt haben
 
 ![API Ansicht](twelve.png)
 
