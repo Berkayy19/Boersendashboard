@@ -3,23 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Boersendashboard</title>
-    <link rel="stylesheet" href="css/style.css">
+    <title>Aktien Dashboard</title>
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
 <div class="container">
     <h1>Aktien Dashboard</h1>
     <div class="stock-info">
-        <label for="symbol">Aktien-Symbol eingeben:</label>
-        <input type="text" id="symbol" placeholder="z.B. AAPL">
+        <label for="symbol">Aktien-Symbol auswählen:</label>
+        <select id="symbol" onchange="toggleCustomInput()">
+            <option value="AAPL">Apple Inc. (AAPL)</option>
+            <option value="GOOGL">Alphabet Inc. (GOOGL)</option>
+            <option value="AMZN">Amazon (AMZN)</option>
+            <option value="MSFT">Microsoft (MSFT)</option>
+            <option value="TSLA">Tesla (TSLA)</option>
+            <option value="OTHER">Andere</option>
+        </select>
+
+        <div id="custom-symbol-container" style="display: none;">
+            <label for="custom-symbol">Gib das Aktien-Symbol ein:</label>
+            <input type="text" id="custom-symbol" placeholder="z.B. NFLX">
+        </div>
+
         <button onclick="fetchStockData()">Abrufen</button>
     </div>
 
     <div id="stock-details" class="stock-details">
         <!-- Stock details will be displayed here -->
+        <h2>Aktie: <span id="stock-name">Apple Inc. (AAPL)</span></h2>
+        <p><strong>Preis:</strong> $<span id="stock-price">201.5</span> <span class="tooltip">[<i class="info-icon">i</i><span class="tooltip-text">Der aktuelle Preis der Aktie basierend auf dem letzten Handel</span>]</span></p>
+        <p><strong>Letzte Änderung:</strong> $<span id="stock-change">0.5</span> <span class="tooltip">[<i class="info-icon">i</i><span class="tooltip-text">Die Veränderung des Aktienpreises im Vergleich zum letzten Handelstag</span>]</span></p>
+        <p><strong>Volumen:</strong> <span id="stock-volume">55,595,500</span> <span class="tooltip">[<i class="info-icon">i</i><span class="tooltip-text">Anzahl der gehandelten Aktien im letzten Zeitraum</span>]</span></p>
     </div>
 </div>
 
-<script src="js/script.js"></script>
+<script src="./js/script.js"></script>
 </body>
 </html>
