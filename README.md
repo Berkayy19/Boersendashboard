@@ -1,76 +1,60 @@
-# 📈 Börsendashboard
+# Börsen Dashboard
 
-Ein webbasiertes Dashboard zur Anzeige von aktuellen Aktienkursen, Finanznachrichten und Marktdaten – übersichtlich und benutzerfreundlich aufbereitet.
+Dieses Projekt ist ein Börsen-Dashboard, das es dem Nutzer ermöglicht, Informationen zu Aktien zu verfolgen. Die Anwendung zeigt wichtige Daten wie Aktienkurse und -namen und bietet eine Dropdown-Auswahl für die wichtigsten Aktien sowie die Möglichkeit, eine benutzerdefinierte Aktie einzugeben.
 
-## 🔍 Projektbeschreibung
+## Projektbeschreibung
 
-Das Börsendashboard ist eine Webanwendung, die Nutzer:innen eine zentrale Übersicht über relevante Finanzinformationen bietet. Die Anwendung kombiniert Kursdaten und Finanznachrichten über externe APIs und stellt diese in Echtzeit dar. Ziel ist es, interessierten Personen den Zugang zu aktuellen Börseninformationen zu erleichtern.
+Das Börsen-Dashboard zeigt Informationen zu Aktien in einer übersichtlichen Weise und ermöglicht es Nutzern, Daten wie den Preis, das Symbol und den Namen der Aktien zu visualisieren. Die App bietet auch eine API, die die Aktienkurse abruft und anzeigt.
 
-## 🖠️ Technologien
+## Technologien
 
-- **Frontend**: React (Vite)
-- **Backend**: Spring Boot
-- **APIs**: Yahoo Finance (inoffiziell), ggf. weitere frei verfügbare Finanzdatenquellen
-- **Versionierung**: Git (GitHub)
+- **Frontend**: HTML, CSS, JavaScript
+- **Backend**: API-Abfragen
+- **API-Datenquelle**: Externe Finanzdaten-API
 
-## 📦 Features (in Entwicklung)
+## Screenshots
 
-- ✅ Anzeige von Echtzeit-Aktienkursen
-- ✅ Integration von Finanznachrichten
-- 🕒 Suchfunktion für einzelne Aktien
-- 🕒 Benutzerdefinierte Watchlist
-- 🕒 Mobile-optimiertes Layout
+### 1. Ergebnisbild
+Hier wird das Ergebnis der Börsenabfrage angezeigt, mit allen wichtigen Informationen wie den Aktienkursen.
 
-## 📁 Projektstruktur
+![Ergebnisbild](resultat.png)
 
-```plaintext
-/boersendashboard
-│
-├── frontend/           # React-Anwendung
-│   ├── src/
-│   └── public/
-│
-├── backend/            # Spring Boot Backend
-│   └── src/main/java/
-│
-└── README.md
-```
+### 2. Dropdown-Auswahl
+Das Dropdown-Menü bietet eine Auswahl der wichtigsten Aktien. Alternativ kann eine benutzerdefinierte Aktie eingegeben werden.
 
-## 🚀 Installation & Ausführen
+![Dropdown](dropdown.png)
 
-### Voraussetzungen
+### 3. API Ansicht
+Diese Ansicht zeigt die API-Daten in der Anwendung und die verschiedenen verfügbaren Optionen.
 
-- Node.js (empfohlen: ≥18)
-- Java JDK (empfohlen: ≥17)
-- Maven oder Gradle
-- Git
+![API Ansicht](twelve.png)
 
-### Lokale Installation
+## Installation
 
-```bash
-# Backend
-cd backend
-./mvnw spring-boot:run
+1. Klone das Repository:
+    ```bash
+    git clone https://github.com/Berkayy19/Boersendashboard.git
+    ```
 
-# Frontend
-cd frontend
-npm install
-npm run dev
-```
+2. Installiere die erforderlichen Abhängigkeiten:
+    ```bash
+    npm install
+    ```
 
-## 👥 Team
+3. Starte den Entwicklungsserver:
+    ```bash
+    npm start
+    ```
 
-Dieses Projekt wird im Rahmen eines Schulprojekts von einem Dreierteam entwickelt. Unsere wöchentlichen Sitzungen finden jeweils am Dienstag statt.
+## Nutzung
 
-## 📅 Zeitplan (Auszug)
+1. Wähle eine Aktie aus der Dropdown-Liste oder gebe eine benutzerdefinierte Aktie ein.
+2. Klicke auf "Ergebnis anzeigen", um die aktuellen Börsendaten der Aktie zu sehen.
 
-- **April 2025**: Projektstart, technische Planung, API-Tests, erste Prototypen
-- **Mai 2025**: API-Integration, Frontend-Entwicklung, Datenvisualisierung
+## API
 
-## 📄 Lizenz
+Die API stellt Daten zu den aktuellen Kursen, Symbolen und Namen der Aktien zur Verfügung.
 
-Dieses Projekt ist rein zu Lernzwecken gedacht und unterliegt keiner kommerziellen Lizenz.
+## Contributing
 
----
-
-> Hinweis: Die verwendeten Datenquellen (z. B. Yahoo Finance API) sind nicht offiziell unterstützt. Für produktive Anwendungen sind offizielle und vertraglich abgesicherte APIs zu empfehlen.
+Beiträge sind willkommen! Wenn du Vorschläge oder Verbesserungen hast, erstelle bitte einen Pull Request.
