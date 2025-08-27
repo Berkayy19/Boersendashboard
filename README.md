@@ -36,14 +36,12 @@ Diese Ansicht zeigt die Twelve Data wieviel mal wir die API benutzt haben
     git clone https://github.com/Berkayy19/Boersendashboard.git
     ```
 
-2. Installiere die erforderlichen Abhängigkeiten:
-    ```bash
-    npm install
-    ```
+2. Run "BoersendashboardApplication"
 
-3. Starte den Entwicklungsserver:
+3. Starte das Frontend:
     ```bash
-    npm start
+    npm install -g serve
+    npx serve .
     ```
 
 ## Nutzung
