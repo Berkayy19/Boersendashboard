@@ -2,9 +2,20 @@ import React, { useState, useEffect } from "react";
 import { fetchStock } from "./api";
 import StockInfo from "./StockInfo";
 
+const popularStocks = [
+    "AAPL", // Apple
+    "GOOG", // Alphabet / Google
+    "MSFT", // Microsoft
+    "AMZN", // Amazon
+    "TSLA", // Tesla
+    "META", // Meta / Facebook
+    "NFLX", // Netflix
+    "NVDA"  // Nvidia
+];
+
 const App = () => {
     const [stock, setStock] = useState(null);
-    const [symbol, setSymbol] = useState("AAPL");
+    const [symbol, setSymbol] = useState(popularStocks[0]);
 
     useEffect(() => {
         const getData = async () => {
@@ -19,13 +30,28 @@ const App = () => {
     return (
         <div style={{ textAlign: "center", maxWidth: "600px", margin: "auto" }}>
             <h1>Boersen Dashboard</h1>
-            <input
-                type="text"
+
+            {/* Dropdown für beliebte Aktien */}
+            <select
                 value={symbol}
-                onChange={(e) => setSymbol(e.target.value.toUpperCase())}
-                placeholder="Stock Symbol"
+                onChange={(e) => setSymbol(e.target.value)}
                 style={{ padding: "8px", fontSize: "1em", marginBottom: "16px" }}
-            />
+            >
+                {popularStocks.map((s) => (
+                    <option key={s} value={s}>{s}</option>
+                ))}
+            </select>
+
+            {/* Alternativ: Eingabefeld für eigene Symbole */}
+            <div style={{ marginTop: "8px", marginBottom: "16px" }}>
+                <input
+                    type="text"
+                    value={symbol}
+                    onChange={(e) => setSymbol(e.target.value.toUpperCase())}
+                    placeholder="Oder eigenes Symbol eingeben"
+                    style={{ padding: "8px", fontSize: "1em" }}
+                />
+            </div>
 
             <StockInfo
                 label="Symbol"
