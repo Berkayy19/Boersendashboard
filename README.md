@@ -17,7 +17,7 @@ Das Dashboard visualisiert wichtige Aktieninformationen auf einfache Weise:
 
 ## Technologien
 
-- **Frontend:** React (JSX), HTML, CSS, JavaScript  
+- **Frontend:** React (JSX), JavaScript  
 - **Backend:** Spring Boot (Java)  
 - **API-Datenquelle:** TwelveData API  
 
